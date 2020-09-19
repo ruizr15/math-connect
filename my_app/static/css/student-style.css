@@ -1,0 +1,41 @@
+#whiteboard {
+    background-color: grey;
+    border: 10px black;
+    width: 70vw;
+    height: 80vh;
+}
+
+#function-row {
+    width: 30vw;
+    height: 10vh;
+}
+
+.functions {
+    width: 10vw;
+    height: 10vh;
+}
+
+#chat {
+    width: 30vw;
+}
+
+#workspace {
+    width: 30vw;
+}
+
+#table_wrapper {
+    border-style:solid;
+    width: 75px;
+    height: 90px;
+}
+
+#color_bar {
+    background-color: red;
+    width: 10px;
+    height: 50px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}

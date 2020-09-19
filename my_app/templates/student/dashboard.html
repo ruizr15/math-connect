@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="{{url_for('static', filename='css/dashboard-style.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/student-style.css')}}">
     </head>
     <body>
+        <table>
+            <td>
+                <div id="whiteboard"></div>
+            </td>
+            <td>
+                <table id="function-row">
+                    <td>
+                        <button class="functions" id="push"><img src="https://dayof.hackmit.org/img/logo-main.svg"></button>
+                    </td>
+                    <td>
+                        <button class="functions" id="split">split</button></butotn>
+                    </td>
+                    <td>
+                        <button class="functions" id="check">check</button>
+                    </td>
+                </table>
+                <div id="workspace">
+                
+                </div>
+                <div id="chat">
+
+                </div>
+            </td>
+        </table>
         <div id="table_wrapper">
             <table>
                 <td>

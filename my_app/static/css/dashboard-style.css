@@ -1,11 +1,12 @@
 body {
     background-color:lightblue;
+    text-align: center;
 }
 
 #table_wrapper {
     border-style:solid;
     width: 75px;
-    height: 75px;
+    height: 90px;
 }
 
 #color_bar {
