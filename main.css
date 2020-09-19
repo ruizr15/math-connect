@@ -1,16 +1,18 @@
-#indicator {
-    background-color: aqua;
-    width: 10px;
-    height: 50px;
+#title {
+    background-color:lightblue;
 }
 
-img {
-    width: 50px;
-    height: 50px;
+.facts {
+    color: red;
+    font-size: 2em;
 }
 
-#icon {
-    border-style:solid;
-    width:75px;
-    height:60px;
+.facts#color {
+    color:blue;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    color:orange;
 }
