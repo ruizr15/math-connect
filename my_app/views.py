@@ -4,4 +4,8 @@ import requests
 
 @app.route("/")
 def index():
-    return "Hello world!"
+    return render_template("index.html")
+
+@app.route("/about")
+def about():
+    return render_template("/teacher/dashboard.html")
