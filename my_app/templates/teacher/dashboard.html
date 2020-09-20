@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="{{url_for('static', filename='css/dashboard-style.css')}}">
-        <title>Math Connect Teacher View</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/teacher-style.css')}}">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="{{url_for('static', filename='js/teacher-dashboard.js')}}"></script>
+        <title>{{name}} | Math Connect Teacher View</title>
     </head>
     <body>
-        <div id="table_wrapper">
-            <table>
-                <td>
-                    <img src="data:image/png;base64,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">
-                </td>
-                <td>
-                    <div id="color_bar"></div>
-                </td>
+        <div id="whiteboard">
+            <canvas id="myCanvas"></canvas>
+        </div>
+
+        <div id="function-row">
+            <button id="push" class="functions" id="push">PUSH</button>
+            <button id="clear" class="functions" id="split">CLEAR</button>
+            <button id="check" class="functions" id="check">CHECK</button>
+        <div>
+        <div id="eq_editor">
+            <div class="ui action input" id="eq_inteface">
+                <input type="text" id="eq_input" placeholder="Enter equation in LaTeX">
+                <button class="ui icon button" id="eq_upload">
+                    <i class="angle double up icon"></i>
+                </button>
+            </div>
+        </div>
+        <div id="chatbox">
+            <table id="chatlog">
             </table>
+            <div class="ui action input">
+                <input type="text" id="chat" placeholder="Type to chat">
+                <button class="ui icon button" id="send">
+                    <i class="angle double up icon"></i>
+                </button>
+            </div>
         </div>
     </body>
 </html>

@@ -1,0 +1,95 @@
+body {
+    background-color:lightblue;
+}
+
+#myCanvas {
+    background-color: lightgray;
+    border-style: solid;
+    width: 70vw;
+    height: 80vh;
+    position: fixed;
+    left: 1vh;
+    top: 1vw;
+    cursor:crosshair;
+}
+
+#function-row {
+    width: 27vw;
+    height: 10vh;
+    position: fixed;
+    left: 72vw;
+    top: 1vw;
+    border-style:solid;
+    border-color: blackv;
+}
+
+button.functions {
+    width: 7vw;
+    height: 7vh;
+    position:absolute;
+    top:0.5vw;
+}
+
+#push {
+    left: 1vw;
+}
+
+#clear {
+    left: 9.5vw;
+}
+
+#check {
+    left: 18vw;
+}
+
+#eq_editor {
+    position:fixed;
+    border-style: solid;
+    background-color: white;
+    left: 72vw;
+    top: 13vh;
+    height: 31vh;
+    width:27vw;
+}
+
+#eq_interface {
+    position:relative;
+    left:50%;
+    top:40vh;
+}
+
+#chatbox {
+    overflow:auto;
+    border-style: solid;
+    position: fixed;
+    top: 45vh;
+    left: 72vw;
+    height: 31vh;
+    width: 27vw;
+}
+
+#chatlog {
+    background-color: lightgray;
+    overflow: auto;
+    position:relative;
+    text-align:center;
+    height: 28vh;
+    width: 25vw;
+}
+
+#table_wrapper {
+    border-style:solid;
+    width: 75px;
+    height: 90px;
+}
+
+#color_bar {
+    background-color: red;
+    width: 10px;
+    height: 50px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}

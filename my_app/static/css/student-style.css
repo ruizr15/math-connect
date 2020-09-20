@@ -1,40 +1,54 @@
-#whiteboard {
+body {
+    background-color: lightblue;
+}
+
+#content {
+    position:fixed;
     background-color: lightgray;
     border-style: solid;
     width: 70vw;
     height: 80vh;
-    position: absolute;
-    left: 1vh;
-    top: 1vw;
-}
-
-#function-row {
-    width: 26vw;
-    height: 10vh;
-    position: absolute;
-    right: 1vw;
-    top: 1vw;
-    border-style:solid;
-}
-
-#workspace {
     position: fixed;
-    top: 15vh;
-    right: 1vw;
-    height: 43vh;
+    left: 1vw;
+    top: 1vh;
+}
+
+#con {
+    position:relative;
+    width:70vw;
+    height:80vh;
+    left:-0.25vw;
+    top:-0.25vh;
+}
+
+#color {
+    position: fixed;
+    background-color: white;
+    outline-style: solid;
+    outline-color: black;
+    left: 72vw;
+    top: 1vh;
+    width: 27vw;
+    height: 15vh;
+}
+
+#colorwheel {
+    position: absolute;
+    width: 25.2vw;
+    height: 12vh;
+    top: 0.5vh;
+    left:0.8vw;
+}
+
+#myCanvas {
+    position: fixed;
+    top: 17vh;
+    left: 72vw;
+    height: 81vh;
     width: 27vw;
     border-style: solid;
     background-color: lightgray;
-}
-
-#chat {
-    position: fixed;
-    top: 62vh;
-    right: 1vw;
-    width: 27vw;
-    height: 31vh;
-    border-style: solid;
-    background-color: lightsalmon;
+    cursor:crosshair;
 }
 
 .functions {
@@ -47,20 +61,29 @@ button.functions {
     height: 7vh;
 }
 
-
-#table_wrapper {
+#user_marker {
+    position:fixed;
     border-style:solid;
-    width: 75px;
-    height: 90px;
-}
-
-#color_bar {
+    left:1vw;
+    top:83vh;
+    width:20vw;
+    height:15vh;
     background-color: red;
-    width: 10px;
-    height: 50px;
 }
 
-img {
-    width: 50px;
-    height: 50px;
+#icon {
+    position: fixed;
+    border-style:solid;
+    left: 22vw;
+    top: 83vh;
+    width: 13vh;
+    height: 13vh;
+}
+
+img.profile {
+    position:absolute;
+    top:0.125vh;
+    left:0.125vh;
+    width: 12vh;
+    height: 12vh;
 }
