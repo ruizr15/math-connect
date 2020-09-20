@@ -18,21 +18,21 @@
 }
 
 #workspace {
-    position: absolute;
-    top: 11vh;
+    position: fixed;
+    top: 15vh;
     right: 1vw;
-    height: 20vh;
-    width: 26vw;
+    height: 43vh;
+    width: 27vw;
     border-style: solid;
     background-color: lightgray;
 }
 
 #chat {
-    position:absolute;
-    top: 32vh;
+    position: fixed;
+    top: 62vh;
     right: 1vw;
-    width: 2vw;
-    height: 20vh;
+    width: 27vw;
+    height: 31vh;
     border-style: solid;
     background-color: lightsalmon;
 }
@@ -47,13 +47,6 @@ button.functions {
     height: 7vh;
 }
 
-#chat {
-    width: 30vw;
-}
-
-#workspace {
-    width: 30vw;
-}
 
 #table_wrapper {
     border-style:solid;
