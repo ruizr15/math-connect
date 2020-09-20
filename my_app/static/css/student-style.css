@@ -1,18 +1,50 @@
 #whiteboard {
-    background-color: grey;
-    border: 10px black;
+    background-color: lightgray;
+    border-style: solid;
     width: 70vw;
     height: 80vh;
+    position: absolute;
+    left: 1vh;
+    top: 1vw;
 }
 
 #function-row {
-    width: 30vw;
+    width: 26vw;
     height: 10vh;
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    border-style:solid;
+}
+
+#workspace {
+    position: absolute;
+    top: 11vh;
+    right: 1vw;
+    height: 20vh;
+    width: 26vw;
+    border-style: solid;
+    background-color: lightgray;
+}
+
+#chat {
+    position:absolute;
+    top: 32vh;
+    right: 1vw;
+    width: 2vw;
+    height: 20vh;
+    border-style: solid;
+    background-color: lightsalmon;
 }
 
 .functions {
-    width: 10vw;
-    height: 10vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+button.functions {
+    width: 7vw;
+    height: 7vh;
 }
 
 #chat {
