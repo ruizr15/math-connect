@@ -2,15 +2,6 @@
     background-color:lightblue;
 }
 
-.facts {
-    color: red;
-    font-size: 2em;
-}
-
-.facts#color {
-    color:blue;
-}
-
 #send {
     text-align: left;
 }
